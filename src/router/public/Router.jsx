@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Home from '../../views/Home';
+import Create from '../../views/Create';
 
 export default class PublicRoute extends React.Component {
     render() {
@@ -14,6 +15,7 @@ export default class PublicRoute extends React.Component {
         <Router>
             <Routes>
                 <Route exact path="/" element={<Home/>}/>
+                <Route path='/create' element={<Create/>} />
             </Routes>
         </Router>
       );

@@ -1,13 +1,22 @@
-import './App.css';
-import PublicRoute from './router/public/Router';
+import "./App.css";
+import React from "react";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from "./views/Home";
+import Create from "./views/Create";
 
 function App() {
   return (
- <>
-  <PublicRoute/>
-  <h1>test</h1>
- </>
-);
+    <>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/create" element={<Create />} />
+        </Routes>
+      </Router>
+    </>
+  );
 }
 
 export default App;

@@ -1,23 +1,35 @@
 import "./App.css";
 import React from "react";
+import { Link, Switch } from "react-router-dom";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Route } from "react-router-dom";
 
 import Home from "./views/Home";
 import Create from "./views/Create";
 
-function App() {
-  return (
-    <>
-      <Router>
-        <Routes>
-          <Home/>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/create" element={<Create />} />
-        </Routes>
-      </Router>
-    </>
-  );
+class App extends React.Component {
+  render() {
+      return (
+        <>
+            <nav>
+              <ul id="navigation">
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                <Link to="/create">Create</Link>
+                </li>
+              </ul>
+            </nav>
+            <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/create">
+              <Create />
+            </Route>
+          </Switch>
+          </>
+            );
+  }
 }
-
-export default App;

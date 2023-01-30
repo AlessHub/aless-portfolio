@@ -1,10 +1,11 @@
 import './App.css';
-import PublicRouter from './router/public/Router';
+import PublicRoute from './router/public/Router';
 
 function App() {
   return (
  <>
-  <PublicRouter/>
+  <PublicRoute/>
+  <h1>test</h1>
  </>
 );
 }

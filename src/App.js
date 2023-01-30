@@ -1,8 +1,6 @@
 import "./App.css";
 import React from "react";
-import { Link, Switch } from "react-router-dom";
-
-import { BrowserRouter as Route } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 
 import Home from "./views/Home";
 import Create from "./views/Create";

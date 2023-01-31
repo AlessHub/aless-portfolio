@@ -1,11 +1,12 @@
 import React from 'react';
 import ShowElement from '../components/layout/ShowProjects';
+import Navbar from '../components/layout/navigation/Navbar';
 
 const Home = () => {
   return (
     <>
-        <h1>Home :D</h1>
-        <ShowElement/>
+        <Navbar/>
+        {/* <ShowElement/> */}
     </>
   )
 }

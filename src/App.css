@@ -1,7 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  font-family: 'Economica';
+}
 .App {
   text-align: center;
 }
 
+a{
+  color: white;
+}
+/* unvisited link */
+a:link {
+  text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+  text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration:none;
+}
+
+/* selected link */
+a:active {
+  text-decoration:none;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,7 +55,11 @@
 .App-link {
   color: #61dafb;
 }
-
+.logo{
+  width: 100%;
+  max-width: 60px;
+  height: auto;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

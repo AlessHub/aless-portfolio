@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  font-family: 'Economica';
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.panda{
+  border-radius: 50%;
+width: 100%;
+max-width: 600px;
+}
+/* unvisited link */
+a:link {
+  text-decoration:none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* visited link */
+a:visited {
+  text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration:none;
+}
+
+/* selected link */
+a:active {
+  text-decoration:none;
+}
+.logo{
+  width: 100%;
+  max-width: 60px;
+  height: auto;
+}
+
+.sliderIcon{
+  width: 100%;
+  max-width: 60px;
+  height: auto; 
 }

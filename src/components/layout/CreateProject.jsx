@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createProject } from '../../services/Api'
+import axios from 'axios';
 
 const CreateProject = () => {
   const [title, setTitle] = useState('');
@@ -8,10 +9,27 @@ const CreateProject = () => {
   const [image_path, setImage_path] = useState('');
   const navigate = useNavigate();
 
+  const url = 'http://localhost:8000/api/projects/'
+
+  const handleChange = (event) => {
+    let value = event.target.files ? event.target.files[0] : event.target.files;
+    if (event.target.files) {
+      setImage_path(value)
+    }
+  }
+  
   const handleSubmit = async (e) => {
-    e.preventDefault();
-      await createProject({ title, link, image_path });
-      navigate('/');
+    e.preventDefault()
+    let formData = new FormData();
+    formData.append("title", title)
+    formData.append("link", link)
+    formData.append("image_path", image_path);
+  axios.post(url, formData, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    })
+    navigate('/');
   };
 
   return (
@@ -39,10 +57,10 @@ const CreateProject = () => {
         <div className="mb-3">
           <label className="form-label"> Image </label>
           <input
-            value={image_path}
-            onChange={(e) => setImage_path(e.target.value)}
-            type="text"
+            onChange={handleChange}
+            type="file"
             className="form-control"
+            accept ="image/*"
           />
         </div>
         <button type="submit" className="btn btn-success">

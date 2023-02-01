@@ -10,7 +10,6 @@ import {
 import Logo from "../../../assets/logo.png";
 import React from "react";
 import { Link } from "react-router-dom";
-import { flexbox } from "@mui/system";
 
 const Navbar = () => {
   return (

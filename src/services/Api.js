@@ -12,10 +12,13 @@ export const deleteProject = (id) => {
 
 export const createProject = async (project) => {
     try {
-      const response = await axios.post(`${url}/projects`, project);
+      const response = await axios.post(`${url}/projects`, project, {
+        'Content-Type': 'multipart/form-data'
+      });
       return response.data;
     } catch (error) {
-      throw error;
+      console.log("ERRRR:: ",error.response.data);
+
     }
   };
 

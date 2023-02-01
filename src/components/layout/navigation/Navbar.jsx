@@ -1,8 +1,5 @@
 import {
-  AppBar,
   Toolbar,
-  IconButton,
-  Typography,
   Stack,
   Button,
   Container
@@ -14,7 +11,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-     <Container maxWidth="xl">
+     <Container sx={{backgroundColor:'#000000'}} maxWidth="xl">
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
           <Link
             to="/"

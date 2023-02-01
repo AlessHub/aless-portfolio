@@ -73,7 +73,9 @@ const HomeSection = () => {
           justifyContent: "center",
         }}
       >
-        <img className="panda" src={Panda} alt="Panda :D" />
+        <div sx={{width:'100%'}}>
+          <img className="panda" src={Panda} alt="Panda :D" />
+        </div>
       </Container>
     </>
   );

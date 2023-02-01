@@ -1,10 +1,10 @@
-import { Paper, Button, Container } from '@mui/material';
+import { Paper, Container } from '@mui/material';
 
 
 function Item({item})
 {
     return (
-        <Paper sx={{backgroundColor:"white", display:'flex', flexDirection:"column", alignItems:'center', alignContent:'space-between', height:'240px'}}>
+        <Paper sx={{backgroundColor:"white", display:'flex', flexDirection:"column", alignItems:'center', height:'240px'}}>
             <Container sx={{display:'flex', alignItems:'center', flexDirection:'column', mt:3}}>
                 
             <img className="sliderIcon" src={item.icon} alt="icon"/>

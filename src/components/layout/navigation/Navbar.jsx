@@ -27,8 +27,8 @@ const Navbar = () => {
             <img className="logo" src={Logo} alt="logo"/>
           </Link>
         <Stack direction="row">
-          <Link to="/create">
-            <Button color='inherit'>Create</Button>
+          <Link to="/admin">
+            <Button color='inherit'>Admin</Button>
           </Link>
           <Link to="/skills">
             <Button color='inherit'>Skills</Button>

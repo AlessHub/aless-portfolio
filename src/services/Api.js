@@ -22,13 +22,13 @@ export const createProject = async (project) => {
     }
   };
 
-  export const editProject = async (id, project) => {
-    try {
-      const response = await axios.patch(`${url}/${id}`, project);
-      console.log(response)
-      return response.data;
-    } catch (error) {
-      console.error(error);
-      return error.response.data;
-    }
-  };
+  // export const editProject = async (id, project) => {
+  //   try {
+  //     const response = await axios.patch(`${url}/${id}`, project);
+  //     console.log(response)
+  //     return response.data;
+  //   } catch (error) {
+  //     console.error(error);
+  //     return error.response.data;
+  //   }
+  // };

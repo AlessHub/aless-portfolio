@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createProject } from '../../services/Api'
 import axios from 'axios';
@@ -17,7 +17,7 @@ const CreateProject = () => {
       setImage_path(value)
     }
   }
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     let formData = new FormData();
@@ -29,7 +29,7 @@ const CreateProject = () => {
         "Content-Type": "multipart/form-data",
       },
     })
-    navigate('/');
+    window.location.reload(true)
   };
 
   return (

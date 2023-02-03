@@ -24,13 +24,13 @@ const CreateProject = () => {
     formData.append("title", title)
     formData.append("link", link)
     formData.append("image_path", image_path);
-  axios.post(url, formData, {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    })
-    window.location.reload(true)
-  };
+    axios.post(url, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      })
+      window.location.reload(true)
+    };
 
   return (
     <div>
@@ -46,7 +46,7 @@ const CreateProject = () => {
           />
         </div>
         <div className="mb-3">
-          <label className="form-label"> email </label>
+          <label className="form-label"> Link </label>
           <input
             value={link}
             onChange={(e) => setLink(e.target.value)}

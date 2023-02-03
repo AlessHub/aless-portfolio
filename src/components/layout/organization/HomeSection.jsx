@@ -147,7 +147,7 @@ const HomeSection = () => {
             mr: {
               xs: 2,
               sm: 3,
-            }
+            },
           }}
         >
           Learn More

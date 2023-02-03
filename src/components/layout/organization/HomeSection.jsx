@@ -113,6 +113,7 @@ const HomeSection = () => {
         }}
       >
         <Button
+          color="secondary"
           variant="contained"
           sx={{
             fontSize: 24,
@@ -132,6 +133,7 @@ const HomeSection = () => {
           Contact me
         </Button>
         <Button
+          color="secondary"
           variant="contained"
           sx={{
             alignSelf: "flex-end",
@@ -145,7 +147,7 @@ const HomeSection = () => {
             mr: {
               xs: 2,
               sm: 3,
-            },
+            }
           }}
         >
           Learn More

@@ -1,34 +1,40 @@
-
-
 import './App.css';
 import PublicRoute from './router/public/Router';
+import { useState, createContext } from 'react';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-
-
-const darkTheme = createTheme({
-  typography: {
-    fontFamily: [
-      'Economica'
-    ].join(','),
-  },
-  palette: {
-    mode: 'dark',
-    background: {
-      default: "#282828"
-    }
-  }
-});
-
-
+export const ModeContext = createContext(); // Create a context
 
 function App() {
+  const [mode, setMode] = useState('dark');
+
+  const theme = createTheme({
+    palette: {
+      mode,
+      primary: {
+        main: '#AB3CAF',
+      },
+      secondary: {
+        main: '#f50057',
+      },
+      typography: {
+        fontFamily: 'Economica',
+      }
+    },
+  });
+
+  const toggleMode = () => {
+    setMode(mode === 'dark' ? 'light' : 'dark');
+  };
+
   return (
-    <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
-      <PublicRoute/>
-    </ThemeProvider>
+    <ModeContext.Provider value={{ mode, toggleMode }}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <PublicRoute />
+      </ThemeProvider>
+    </ModeContext.Provider>
   );
 }
 

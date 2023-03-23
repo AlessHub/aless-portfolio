@@ -26,14 +26,8 @@ export default function Item({item}) {
           {item.title}
         </Typography>
         <Typography align="center" variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
         </Typography>
       </CardContent>
     </Card>
   );
 }
-
-{/* <img className="sliderIcon" src={item.icon} alt="icon"/>
-<h2 style={{color:'black'}}>{item.title}</h2>
-<p style={{color:'black'}}> {item.description}</p> */}

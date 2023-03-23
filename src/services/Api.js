@@ -16,7 +16,7 @@ export const createProject = async (project) => {
         'Content-Type': 'multipart/form-data'
       });
       return response.data;
-    } catch (error) {
+    } catch (error) { 
       console.log("ERRRR:: ",error.response.data);
 
     }

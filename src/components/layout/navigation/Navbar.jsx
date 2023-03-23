@@ -1,43 +1,47 @@
-import {
-  Toolbar,
-  Stack,
-  Button,
-  Container
-} from "@mui/material";
+import { Toolbar, Stack, Button, AppBar, Box } from "@mui/material";
 import Logo from "../../../assets/logo.png";
 import React from "react";
 import { Link } from "react-router-dom";
+import ThemeMode from "../organization/ThemeMode";
 
 const Navbar = () => {
   return (
     <>
-     <Container sx={{backgroundColor:'#000000'}} maxWidth="xl">
-      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-          <Link
-            to="/"
+      <AppBar sx={{backgroundColor:"#111111"}} bgcolor="black" maxWidth="xl">
+        <Toolbar
+          sx={{
+            p:1,
+            display: "flex",
+            justifyContent: {
+              xs: "center",
+              sm: "space-between",
+            },
+          }}
+        >
+          <Box
+            component="img"
             sx={{
-              flexGrow: 2,
-              fontFamily: 'Economica',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              width: "100%",
+              maxWidth: "60px",
+              height: "auto",
+              display: {
+                xs: "none",
+                sm: "block",
+              },
             }}
-          >
-            <img className="logo" src={Logo} alt="logo"/>
-          </Link>
-        <Stack direction="row">
-          <Link to="/admin">
-            <Button color='inherit'>Admin</Button>
-          </Link>
-          <Link to="/skills">
-            <Button color='inherit'>Skills</Button>
-          </Link>
-          <Button color='inherit'>Projects</Button>
-          <Button color='inherit'>Contact</Button>
-        </Stack>
-      </Toolbar>
-      </Container>
+            alt="Logo"
+            src={Logo}
+          />
+          <Stack direction="row">
+            <Link to="#">
+              <Button color="inherit">Skills</Button>
+            </Link>
+            <Button color="inherit">Projects</Button>
+            <Button color="inherit">Contact</Button>
+          </Stack>
+        </Toolbar>
+      </AppBar>
+        <ThemeMode/>
     </>
   );
 };

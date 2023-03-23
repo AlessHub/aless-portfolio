@@ -5,31 +5,45 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Panda from "../../../assets/panda.jpg";
 import { styled } from "@mui/material/styles";
-import { blue, purple, red, green } from "@mui/material/colors";
 
 const Responsive = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("xs")]: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    color: green[500],
   },
   [theme.breakpoints.up("sm")]: {
     display: "flex",
     flexDirection: "row",
-    color: blue[500],
-  },
-  [theme.breakpoints.up("md")]: {
-    display: "flex",
-    flexDirection: "row",
-    color: red[500],
-  },
-  [theme.breakpoints.up("lg")]: {
-    display: "flex",
-    flexDirection: "row",
-    color: purple[500],
-  },
+  }
 }));
+
+function HomeButton(props) {
+  const { text } = props;
+  return (
+    <Button
+      variant="contained"
+      color="primary"
+      sx={{
+        fontSize: 21,
+        width: {
+          xs: "135px",
+          sm: "160px",
+          md: "180px",
+          lg: "180px",
+        },
+        mt: 2,
+        m: {
+          xs: 2,
+          sm: 3,
+        },
+      }}
+    >
+      {text}
+    </Button>
+  );
+}
+
 
 const HomeSection = () => {
   return (
@@ -39,16 +53,18 @@ const HomeSection = () => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            alignItems: "space-between",
+            alignItems: {xs:'center', sm:'flex-start'},
             flexDirection: "column",
+            
 
             gap: 3,
-            mt: 5,
+            mt: 1,
           }}
         >
           <Typography
             variant="h2"
-            sx={{ display: "flex", flexDirection: "column" }}
+            color="primary"
+            sx={{ display: "flex", flexDirection: "column", alignItems: {xs:'center', sm:'flex-start'}}}
           >
             <span>Alessandro</span>
             <span>Arroyo</span>
@@ -73,29 +89,30 @@ const HomeSection = () => {
           }}
         >
           <Typography
+            color="primary"
             sx={{
               textAlign: {
+                xs:'center',
                 sm: "right",
-                lg: "right",
-                md: "right",
               },
             }}
             variant="h2"
           >
-            About me
+            <span>About me</span>
           </Typography>
           <Typography
             sx={{
               textAlign: {
+                xs:'center',
                 sm: "right",
-                lg: "right",
-                md: "right",
-              },
+              },mb:2
             }}
             variant="h6"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet in
-            magna diam quis malesuada elementum imperdiet non.
+            Hello! I'm a 27 year old developer from Barcelona.
+              I love coding! Being able to convert my thoughts into a reality is
+              something that makes me really happy. So I hope I can continue coding forever more!
+           
           </Typography>
         </Container>
       </Responsive>
@@ -112,46 +129,8 @@ const HomeSection = () => {
           },
         }}
       >
-        <Button
-          color="secondary"
-          variant="contained"
-          sx={{
-            fontSize: 24,
-            width: {
-              xs: "135px",
-              sm: "160px",
-              md: "180px",
-              lg: "180px",
-            },
-            mt: 2,
-            ml: {
-              xs: 2,
-              sm: 3,
-            },
-          }}
-        >
-          Contact me
-        </Button>
-        <Button
-          color="secondary"
-          variant="contained"
-          sx={{
-            alignSelf: "flex-end",
-            fontSize: 24,
-            width: {
-              xs: "135px",
-              sm: "160px",
-              md: "180px",
-              lg: "180px",
-            },
-            mr: {
-              xs: 2,
-              sm: 3,
-            },
-          }}
-        >
-          Learn More
-        </Button>
+        <HomeButton text="Contact Me"/>
+        <HomeButton text="Learn More"/>
       </Container>
       <Container
         maxWidth="large"

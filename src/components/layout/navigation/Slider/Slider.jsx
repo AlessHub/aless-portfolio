@@ -1,19 +1,15 @@
-
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Pagination, Autoplay } from "swiper";
 import { Container } from "@mui/system";
 import "swiper/css";
 import "swiper/css/pagination";
-import sliderinfo from '../../../../utils/sliderinfo.json';
+import sliderinfo from "../../../../utils/sliderinfo.json";
 import Item from "./Item";
-import 'swiper/css/navigation';
+import "swiper/css/navigation";
 
 const AppSlider = () => {
-  
-
   return (
-    <Container sx={{}}>
+    <Container sx={{ maxWidth: "600px !important", mb: 5 }}>
       <Swiper
         observer={true}
         observeParents={true}
@@ -21,30 +17,32 @@ const AppSlider = () => {
         grabCursor={true}
         loop={true}
         parallax={true}
-        navigation
+        autoplay
         className="mySwiper"
         breakpoints={{
           0: {
-            slidesPerView: 1,
-            spaceBetween: 10,
+            slidesPerView: 3,
+            spaceBetween: 0,
           },
           768: {
-            slidesPerView: 3,
-            spaceBetween: 15,
+            slidesPerView: 5,
+            spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 3,
-            spaceBetween: 15,
+            slidesPerView: 5,
+            spaceBetween: 5,
           },
           1280: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 5,
+            spaceBetween: 5,
           },
         }}
       >
-             {
-                 sliderinfo.map( (item, i) => <SwiperSlide><Item key={item.id} item={item} /></SwiperSlide> )
-             }
+        {sliderinfo.map((item, i) => (
+          <SwiperSlide>
+            <Item key={item.id} item={item} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </Container>
   );

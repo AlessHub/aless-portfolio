@@ -7,7 +7,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 export const ModeContext = createContext(); // Create a context
 
 function App() {
-  const [mode, setMode] = useState('dark');
+  const [mode, setMode] = useState('light');
 
   const theme = createTheme({
     palette: {

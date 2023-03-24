@@ -7,7 +7,7 @@ const SkillsSection = () => {
     <>
     <Typography variant="h3"
             sx={{ mb:5, textAlign:'center', mt:5}}>
-        What can I do?
+        Tech Stack
     </Typography>
     <Slider/>
     </>

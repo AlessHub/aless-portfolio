@@ -37,3 +37,12 @@ a:active {
   max-width: 60px;
   height: auto; 
 }
+.swiper-wrapper{
+  height: 120px !important;
+}
+
+.swiper-slide{
+  display:flex !important;
+  justify-content: center;
+  align-items: center;
+}

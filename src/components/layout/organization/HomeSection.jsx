@@ -5,7 +5,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Panda from "../../../assets/panda.jpg";
 import { styled } from "@mui/material/styles";
-import { useTheme } from "@mui/material/styles";
 
 
 const Responsive = styled("div")(({ theme }) => ({
@@ -27,7 +26,8 @@ function HomeButton(props) {
       variant="contained"
       color="primary"
       sx={{
-        fontSize: 21,
+        p:1,
+        fontSize: 14,
         width: {
           xs: "135px",
           sm: "160px",
@@ -48,7 +48,6 @@ function HomeButton(props) {
 
 
 const HomeSection = () => {
-  const theme = useTheme();
   return (
     <>
       <Responsive>
@@ -66,14 +65,14 @@ const HomeSection = () => {
         >
           <Typography
             variant="h2"
-            color={theme.palette.mode === "dark" ? "primary" : "inherit"}
-            sx={{ display: "flex", flexDirection: "column", alignItems: {xs:'center', sm:'flex-start'}}}
+            color="primary"
+            sx={{ fontWeight:'300', display: "flex", flexDirection: "column", alignItems: {xs:'center', sm:'flex-start'}}}
           >
             <span>Alessandro</span>
             <span>Arroyo</span>
             <span>Lebron</span>
           </Typography>
-          <Typography variant="h6">FullStack Web Developer</Typography>
+          <Typography variant="body1">FullStack Web Developer</Typography>
           {/* <Box>
             <EmailIcon />
             <LinkedInIcon></LinkedInIcon>
@@ -92,8 +91,9 @@ const HomeSection = () => {
           }}
         >
           <Typography
-          color={theme.palette.mode === "dark" ? "primary" : "inherit"}
+          color="primary"
             sx={{
+              fontSize:"3em",
               textAlign: {
                 xs:'center',
                 sm: "right",
@@ -110,7 +110,7 @@ const HomeSection = () => {
                 sm: "right",
               },mb:2
             }}
-            variant="h6"
+            variant="body2"
           >
             Hello! I'm a 27 year old developer from Barcelona.
               I love coding! Being able to convert my thoughts into a reality is

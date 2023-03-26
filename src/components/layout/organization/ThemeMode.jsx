@@ -11,7 +11,9 @@ function ThemeMode() {
   const { toggleMode } = useContext(ModeContext);
   return (
     <Box
+    onClick={toggleMode}
       sx={{
+        cursor:'pointer',
         mt: {xs: 9, sm:13},
         display: "flex",
         width: "100%",
@@ -24,7 +26,6 @@ function ThemeMode() {
       {theme.palette.mode.charAt(0).toUpperCase() + theme.palette.mode.slice(1)}
       <IconButton
         sx={{ ml: 1, mr: { xs: 2, sm: 2 } }}
-        onClick={toggleMode}
         color="inherit"
       >
         {theme.palette.mode === "dark" ? (

@@ -14,12 +14,14 @@ const PortfolioSection = () => {
   
   return (
     <>
-        <Typography variant="h2" sx={{mb:3}} textAlign={"center"} >
+    <Container>
+        <Typography variant="h3" sx={{fontWeight:300,mb:3}} textAlign={"center"} >
           My Projects
         </Typography>
         <Typography variant="body1" sx={{mb:3}} textAlign={"center"} >
           These projects were made in a 850 hour long Bootcamp, at Factoria F5
         </Typography>
+    </Container>
       <Container sx={{display:'flex', gap:5, flexWrap:"wrap", justifyContent:'center', alignItems:"center"}}>
         {projects.map((project) => (
           <Card sx={{ width: 345, boxShadow:"2px 2px #AB3CAF", border:'1px solid #AB3CAF'}}>

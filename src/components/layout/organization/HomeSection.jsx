@@ -5,6 +5,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Panda from "../../../assets/panda.jpg";
 import { styled } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
+
 
 const Responsive = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("xs")]: {
@@ -46,6 +48,7 @@ function HomeButton(props) {
 
 
 const HomeSection = () => {
+  const theme = useTheme();
   return (
     <>
       <Responsive>
@@ -63,7 +66,7 @@ const HomeSection = () => {
         >
           <Typography
             variant="h2"
-            color="primary"
+            color={theme.palette.mode === "dark" ? "primary" : "inherit"}
             sx={{ display: "flex", flexDirection: "column", alignItems: {xs:'center', sm:'flex-start'}}}
           >
             <span>Alessandro</span>
@@ -89,7 +92,7 @@ const HomeSection = () => {
           }}
         >
           <Typography
-            color="primary"
+          color={theme.palette.mode === "dark" ? "primary" : "inherit"}
             sx={{
               textAlign: {
                 xs:'center',

@@ -3,11 +3,13 @@ import Logo from "../../../assets/logo.png";
 import React from "react";
 import { Link } from "react-router-dom";
 import ThemeMode from "../organization/ThemeMode";
+import { useTheme } from "@mui/material";
 
 const Navbar = () => {
+  const theme = useTheme();
   return (
     <>
-      <AppBar sx={{backgroundColor:"#111111"}} bgcolor="black" maxWidth="xl">
+      <AppBar  sx={{backgroundColor:"#111111"}} maxWidth="xl">
         <Toolbar
           sx={{
             p:1,
@@ -34,10 +36,10 @@ const Navbar = () => {
           />
           <Stack direction="row">
             <Link to="#">
-              <Button color="inherit">Skills</Button>
+              <Button color={theme.palette.mode === "dark" ? "inherit" : "primary"}>Skills</Button>
             </Link>
-            <Button color="inherit">Projects</Button>
-            <Button color="inherit">Contact</Button>
+            <Button color={theme.palette.mode === "dark" ? "inherit" : "primary"}>Projects</Button>
+            <Button color={theme.palette.mode === "dark" ? "inherit" : "primary"}>Contact</Button>
           </Stack>
         </Toolbar>
       </AppBar>

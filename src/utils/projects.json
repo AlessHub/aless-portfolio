@@ -4,7 +4,7 @@
         "photos": "url",
         "deploy": "no deploy :(",
         "title": "LeagueOfApis",
-        "description": "lorem ipsum",
+        "description": "We were given a few API's to practise, using fetch, axios etc. I chose Riot's API and made this in the span of 3 days with JavaScript and CSS",
         "imageCover":"https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png"
     },
     {

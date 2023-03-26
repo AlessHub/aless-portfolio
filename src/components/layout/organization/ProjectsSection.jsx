@@ -14,8 +14,8 @@ const PortfolioSection = () => {
   
   return (
     <>
-      <Container>
-        <Typography variant="h2" textAlign={"center"} >
+      <Container sx={{display:'flex', flexDirection:"column", alignItems:"center"}}>
+        <Typography variant="h2" sx={{mb:3}} textAlign={"center"} >
           My Projects
         </Typography>
         {projects.map((project) => (
@@ -24,7 +24,6 @@ const PortfolioSection = () => {
             component="img"
             alt="green iguana"
             height="140"
-            sx={{objectFit:"scale-down"}}
             image={project.imageCover}
           />
           <CardContent>

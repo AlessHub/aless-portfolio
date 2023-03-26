@@ -24,7 +24,8 @@ const PortfolioSection = () => {
             component="img"
             alt="green iguana"
             height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            sx={{objectFit:"scale-down"}}
+            image={project.imageCover}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">

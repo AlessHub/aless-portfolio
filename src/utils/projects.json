@@ -5,7 +5,7 @@
         "deploy": "no deploy :(",
         "title": "LeagueOfApis",
         "description": "lorem ipsum",
-        "imageCover":"test"
+        "imageCover":"https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png"
     },
     {
         "id": 2,

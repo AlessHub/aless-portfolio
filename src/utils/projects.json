@@ -4,7 +4,7 @@
         "photos": "url",
         "deploy": "no deploy :(",
         "title": "LeagueOfApis",
-        "description": "We were given a few API's to practise, using fetch, axios etc. I chose Riot's API and made this in the span of 3 days with JavaScript and CSS",
+        "description": "A quick exercise to learn and play around LoL API. The main goal was to learn how to call API's and display their data.",
         "imageCover":"https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png"
     },
     {
@@ -12,23 +12,23 @@
         "photos": "url",
         "deploy": "no deploy :(",
         "title": "RankingApp",
-        "description": "lorem ipsum",
-        "imageCover":"test"
+        "description": "We were tasked with an app that would rank different apps depending on user ratings.",
+        "imageCover":"https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp.png"
     },
     {
         "id": 3,
         "photos": "url",
         "deploy": "no deploy :(",
         "title": "LaraEventsApp",
-        "description": "lorem ipsum",
-        "imageCover":"test"
+        "description": "In our first encounter as a group with BackEnd, we had to create an app to manage and create different events.",
+        "imageCover":"https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png"
     },
     {
         "id": 4,
         "photos": "url",
         "deploy": "no deploy :(",
         "title": "EcoEnergy",
-        "description": "lorem ipsum",
-        "imageCover":"test"
+        "description": "Final project of our Bootcamp. The idea was to create an App that would help users change their consuming habits.",
+        "imageCover":"https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png"
     }
 ]

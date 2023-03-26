@@ -1,4 +1,4 @@
-import { Typography, Container, Button } from "@mui/material";
+import { Typography, Container, Button, Box } from "@mui/material";
 import React from "react";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -74,11 +74,11 @@ const HomeSection = () => {
             <span>Lebron</span>
           </Typography>
           <Typography variant="h6">FullStack Web Developer</Typography>
-          <div>
+          {/* <Box>
             <EmailIcon />
             <LinkedInIcon></LinkedInIcon>
             <GitHubIcon />
-          </div>
+          </Box> */}
         </Container>
         <Container
           maxWidth="large"

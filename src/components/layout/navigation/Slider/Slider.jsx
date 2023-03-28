@@ -39,8 +39,8 @@ const AppSlider = () => {
         }}
       >
         {sliderinfo.map((item, i) => (
-          <SwiperSlide>
-            <Item key={item.id} item={item} />
+          <SwiperSlide key={item.id}>
+            <Item item={item} />
           </SwiperSlide>
         ))}
       </Swiper>

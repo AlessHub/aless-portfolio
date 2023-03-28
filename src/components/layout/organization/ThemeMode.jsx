@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ModeContext } from "../../../App";
 import IconButton from "@mui/material/IconButton";
-import Box from "@mui/material/Box";
+import Button from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
@@ -10,8 +10,9 @@ function ThemeMode() {
   const theme = useTheme();
   const { toggleMode } = useContext(ModeContext);
   return (
-    <Box
+    <Button
     onClick={toggleMode}
+    alt="Light or dark mode button"
       sx={{
         cursor:'pointer',
         mt: {xs: 9, sm:13},
@@ -34,7 +35,7 @@ function ThemeMode() {
           <Brightness4Icon />
         )}
       </IconButton>
-    </Box>
+    </Button>
   );
 }
 

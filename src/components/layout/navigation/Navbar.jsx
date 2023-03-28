@@ -9,7 +9,7 @@ const Navbar = () => {
   const theme = useTheme();
   return (
     <>
-      <AppBar  sx={{backgroundColor:"#111111"}} maxWidth="xl">
+      <AppBar  sx={{backgroundColor:"#111111"}}>
         <Toolbar
           sx={{
             p:1,

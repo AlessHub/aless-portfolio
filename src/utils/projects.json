@@ -7,7 +7,9 @@
         "description": "A quick exercise to learn and play around LoL API. The main goal was to learn how to call API's and display their data.",
         "detailedDescription": "We were given a handful of API's to practise with, wether it was using fetch or axios, the idea was to call them and play around on how to display them on a website, this was done in the span of 3 days.",
         "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png",
-        "imageSlider": ["https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png", "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png", "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png"]
+        "imageSlider": ["https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png", "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png", "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png"],
+        "repository": "https://github.com/AlessHub/leagueApi",
+        "techStack": "HTML, Javascript, CSS"
     },
     {
         "id": 2,
@@ -17,7 +19,9 @@
         "description": "We were tasked with an app that would rank different apps depending on user ratings.",
         "detailedDescription": "Before our first contact with BackEnd, we were given the task to make an App that would rank different apps depending on user ratings, this was done in the span of 2 weeks using a Kanban and AGILE/SCRUM. We used localStorage to manage the data and use the CRUD system. And filters to search and filter around the different Apps.",
         "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp.png",
-        "imageSlider": ["test", "test", "test"]
+        "imageSlider": ["https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp.png", "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp.png", "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp.png"],
+        "repository": "https://github.com/AlessHub/rankingapp",
+        "techStack": "Javascript, React, Styled Components, Swiper"
     },
     {
         "id": 3,
@@ -26,7 +30,9 @@
         "title": "LaraEventsApp",
         "description": "In our first encounter as a group with BackEnd, we had to create an app to manage and create different events.",
         "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png",
-        "imageSlider": ["test", "test", "test"]
+        "imageSlider": ["https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png","https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png","https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png"],
+        "repository": "https://github.com/AlessHub/LaraEventsApp",
+        "techStack": "Laravel, MySql, Blade, Sass, Bootstrap"
     },
     {
         "id": 4,
@@ -34,6 +40,9 @@
         "deploy": "null",
         "title": "EcoEnergy",
         "description": "Final project of our Bootcamp. The idea was to create an App that would help users change their consuming habits.",
-        "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png"
+        "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png",
+        "imageSlider": ["https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png","https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png","https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png"],
+        "repository": "https://github.com/AlessHub/LaraEventsApp",
+        "techStack": "Laravel, MySql, Blade, Sass, Bootstrap"
     }
 ]

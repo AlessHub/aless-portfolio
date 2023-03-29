@@ -2,12 +2,15 @@ import React from "react";
 import { CardActions, CardContent, CardMedia, Modal } from "@mui/material";
 import Backdrop from "@mui/material/Backdrop";
 import Fade from "@mui/material/Fade";
-import { Card, Typography } from "@mui/material";
+import { Card, Typography, Button } from "@mui/material";
 import ProjectCardSwiper from "./ProjectCardSwiper";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const ProjectModal = ({ project, open, handleClose }) => {
   const style = {
     position: "absolute",
+    display: "flex",
+    flexDirection: "column",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
@@ -16,7 +19,7 @@ const ProjectModal = ({ project, open, handleClose }) => {
     bgcolor: "background.paper",
     border: "2px solid #000",
     boxShadow: 24,
-    p: 4,
+    maxWidth: 600,
   };
 
   return (
@@ -39,17 +42,22 @@ const ProjectModal = ({ project, open, handleClose }) => {
             <ProjectCardSwiper imageUrls={project.imageSlider} />
           </CardMedia>
           <CardContent>
-
-          <Typography id="transition-modal-title" variant="h6" component="h2">
-            {project.title}
-          </Typography>
-          <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-            {project.detailedDescription}
-          </Typography>
+            <Typography id="transition-modal-title" variant="h6" component="h2">
+              {project.title}
+            </Typography>
+            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+              {project.detailedDescription}
+            </Typography>
+            <Button
+              href={project.repository}
+              target="_blank"
+              variant="contained"
+              sx={{mt:3, backgroundColor:"#111111", textTransform: 'capitalize'}}
+              startIcon={<GitHubIcon />}
+            >
+              repository
+            </Button>
           </CardContent>
-          <CardActions>
-
-          </CardActions>
         </Card>
       </Fade>
     </Modal>

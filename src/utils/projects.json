@@ -5,7 +5,7 @@
         "deploy": "https://leagueofapis.netlify.app",
         "title": "LeagueOfApis",
         "description": "A quick exercise to learn and play around LoL API. The main goal was to learn how to call API's and display their data.",
-        "detailedDescription": "We were given a handful of API's to practise with, wether it was using fetch or axios, the idea was to call them and play around on how to display them on a website, this was done in the span of 3 days.",
+        "detailedDescription": "We were given a handful of API's to practise with, wether it was using fetch or axios, the idea was to call them and play around on how to display them on a website, this was done in the span of a day.",
         "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png",
         "imageSlider": [
             "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png",

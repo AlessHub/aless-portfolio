@@ -4,7 +4,7 @@ import { useState, createContext } from 'react';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-export const ModeContext = createContext(); // Create a context
+export const ModeContext = createContext();
 
 function App() {
   const [mode, setMode] = useState('light');

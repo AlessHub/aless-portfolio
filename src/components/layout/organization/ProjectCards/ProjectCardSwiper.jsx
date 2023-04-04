@@ -4,8 +4,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { CardMedia } from "@mui/material";
+import { useTheme } from "@emotion/react";
 
 const ProjectCardSwiper = ({ imageUrls }) => {
+  const theme = useTheme();
   return (
     <>
       <Swiper
@@ -18,7 +20,7 @@ const ProjectCardSwiper = ({ imageUrls }) => {
         parallax={true}
         className="mySwiper"
         style={{
-          "--swiper-pagination-color": "#AB3CAF",
+          "--swiper-pagination-color": theme.palette.primary.main,
           "--swiper-pagination-bullet-inactive-color": "#fff",
           "--swiper-pagination-bullet-inactive-opacity": "1",
         }}

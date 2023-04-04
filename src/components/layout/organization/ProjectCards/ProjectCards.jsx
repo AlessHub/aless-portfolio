@@ -1,14 +1,16 @@
 import React from "react";
 import projects from "../../../../utils/projects.json";
-import { Typography} from "@mui/material";
+import { Typography } from "@mui/material";
 import { Card } from "@mui/material";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import ProjectModal from "./ProjectCardsModal";
+import { useTheme } from "@emotion/react";
 
 const ProjectCard = () => {
+  const theme = useTheme();
   const [open, setOpen] = React.useState(false);
   const [selectedProjectIndex, setSelectedProjectIndex] = React.useState(null);
 
@@ -27,8 +29,8 @@ const ProjectCard = () => {
           sx={{
             paddingTop: "0px !important",
             width: { xs: 345, sm: 540 },
-            boxShadow: "2px 2px #AB3CAF",
-            border: "1px solid #AB3CAF",
+            boxShadow: `2px 2px ${theme.palette.primary.main}`,
+            border: `1px solid ${theme.palette.primary.main}`,
           }}
         >
           <CardMedia

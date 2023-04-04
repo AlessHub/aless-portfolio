@@ -17,7 +17,9 @@ const AppSlider = () => {
         grabCursor={true}
         loop={true}
         parallax={true}
-        autoplay
+        autoplay={{
+          delay: 500,
+        }}
         className="mySwiper"
         breakpoints={{
           0: {

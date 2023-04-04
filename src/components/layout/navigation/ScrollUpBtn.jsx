@@ -29,6 +29,7 @@ const ScrollToTop = () => {
             right: "20px",
             height: "40px",
             width: "40px",
+            zIndex:"4000",
             "&:hover":{
               backgroundColor: `${theme.palette.primary.main} !important`
             }

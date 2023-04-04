@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { send } from "emailjs-com";
-import { FormControl, TextField, Button} from "@mui/material";
+import { FormControl, TextField, Button } from "@mui/material";
 
 const EmailForm = () => {
   const [toSend, setToSend] = useState({
@@ -27,42 +27,58 @@ const EmailForm = () => {
   };
   return (
     <>
-    <form onSubmit={onSubmit}>
-      <FormControl sx={{p:2, display:'flex', gap:3, width:{xs:'100%', sm:'50%'}, margin:'auto'}}>
-        <TextField
-          name="from_name"
-          placeholder="Your name"
-          value={toSend.from_name}
-          onChange={handleChange}
-          type="text"
-          color="primary"
-        />
-        <TextField
-          type="text"
-          name="to_name"
-          sx={{display:'none'}}
-          placeholder="to name"
-          value={toSend.to_name}
-          onChange={handleChange}
-        />
-        <TextField
-          type="text"
-          name="message"
-          placeholder="Your message"
-          value={toSend.message}
-          onChange={handleChange}
-        />
-        <TextField
-          type="text"
-          name="reply_to"
-          placeholder="Your email"
-          value={toSend.reply_to}
-          onChange={handleChange}
-        />
-        <Button variant="contained" type="submit">
-          Submit
-        </Button>
-      </FormControl>
+      <form onSubmit={onSubmit}>
+        <FormControl
+          sx={{
+            p: 2,
+            display: "flex",
+            gap: 3,
+            width: { xs: "100%", sm: "50%" },
+            margin: "auto",
+          }}
+        >
+          <TextField
+            name="from_name"
+            placeholder="Your name"
+            value={toSend.from_name}
+            onChange={handleChange}
+            type="text"
+            color="primary"
+            variant="outlined"
+            label="Name"
+          />
+          <TextField
+            type="text"
+            name="to_name"
+            sx={{ display: "none" }}
+            placeholder="to name"
+            value={toSend.to_name}
+            onChange={handleChange}
+          />
+          <TextField
+            type="text"
+            name="message"
+            placeholder="Your message"
+            value={toSend.message}
+            onChange={handleChange}
+            
+            variant="outlined"
+            label="Message"
+          />
+          <TextField
+            type="text"
+            name="reply_to"
+            placeholder="Your email"
+            value={toSend.reply_to}
+            onChange={handleChange}
+            
+            variant="outlined"
+            label="Email"
+          />
+          <Button variant="contained" type="submit">
+            Submit
+          </Button>
+        </FormControl>
       </form>
     </>
   );

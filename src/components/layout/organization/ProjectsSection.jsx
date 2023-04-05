@@ -3,11 +3,12 @@ import { Container } from "@mui/system";
 import { Typography, Link} from "@mui/material";
 import ProjectCards from "./ProjectCards/ProjectCards";
 
+
 const PortfolioSection = () => {
 
   return (
     <>
-      <Container>
+      <Container id="projects-section">
         <Typography
           variant="h3"
           sx={{ fontWeight: 300, mb: 3 }}

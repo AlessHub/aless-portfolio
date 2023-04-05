@@ -2,9 +2,13 @@ import React, { useState, useEffect } from "react";
 import { IconButton } from "@mui/material";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import { useTheme } from "@mui/material";
+import { animateScroll as scroll } from 'react-scroll'
 
 const ScrollToTop = () => {
   const theme = useTheme();
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -20,6 +24,7 @@ const ScrollToTop = () => {
       {" "}
       {showTopBtn && (
         <IconButton
+        onClick={scrollToTop}
           sx={{
             borderRadius: "50%",
             color: "white",

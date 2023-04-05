@@ -1,18 +1,19 @@
 import { Toolbar, Stack, Button, AppBar, Box } from "@mui/material";
 import Logo from "../../../assets/logo.png";
 import React from "react";
-import { Link } from "react-router-dom";
-import ThemeMode from "../organization/ThemeMode";
+import ThemeMode from "../organization/Theme/ThemeMode";
 import { useTheme } from "@mui/material";
+import { handleNavClick } from "../../../utils/Functions";
 
 const Navbar = () => {
   const theme = useTheme();
+
   return (
     <>
-      <AppBar  sx={{backgroundColor:"#111111"}}>
+      <AppBar sx={{ backgroundColor: "#111111" }}>
         <Toolbar
           sx={{
-            p:1,
+            p: 1,
             display: "flex",
             justifyContent: {
               xs: "center",
@@ -35,15 +36,34 @@ const Navbar = () => {
             src={Logo}
           />
           <Stack direction="row">
-            <Link to="#">
-              <Button color={theme.palette.mode === "dark" ? "inherit" : "primary"}>Skills</Button>
-            </Link>
-            <Button color={theme.palette.mode === "dark" ? "inherit" : "primary"}>Projects</Button>
-            <Button color={theme.palette.mode === "dark" ? "inherit" : "primary"}>Contact</Button>
+            <Button
+              color={
+                theme.palette.mode === "dark" ? "inherit" : "primary"
+              }
+              onClick={(e) => handleNavClick("skills-section", e)}
+            >
+              Skills
+            </Button>
+            <Button
+              color={
+                theme.palette.mode === "dark" ? "inherit" : "primary"
+              }
+              onClick={(e) => handleNavClick("projects-section", e)}
+            >
+              Projects
+            </Button>
+            <Button
+              color={
+                theme.palette.mode === "dark" ? "inherit" : "primary"
+              }
+              onClick={(e) => handleNavClick("contact-section", e)}
+            >
+              Contact
+            </Button>
           </Stack>
         </Toolbar>
       </AppBar>
-        <ThemeMode/>
+      <ThemeMode />
     </>
   );
 };

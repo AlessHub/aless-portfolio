@@ -1,11 +1,8 @@
-import { Typography, Container, Button, Box } from "@mui/material";
+import { Typography, Container, Button } from "@mui/material";
 import React from "react";
-import EmailIcon from "@mui/icons-material/Email";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import Panda from "../../../assets/panda.jpg";
 import { styled } from "@mui/material/styles";
-
+import { handleNavClick } from "../../../utils/Functions";
 
 const Responsive = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("xs")]: {
@@ -16,17 +13,22 @@ const Responsive = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("sm")]: {
     display: "flex",
     flexDirection: "row",
-  }
+  },
 }));
 
 function HomeButton(props) {
-  const { text } = props;
+  const { text, targetId } = props; // added targetId prop
+
+  const handleClick = (event) => {
+    handleNavClick(targetId, event); // call handleNavClick with targetId
+  };
   return (
     <Button
       variant="contained"
       color="primary"
+      onClick={handleClick}
       sx={{
-        p:1,
+        p: 1,
         fontSize: 14,
         width: {
           xs: "135px",
@@ -46,7 +48,6 @@ function HomeButton(props) {
   );
 }
 
-
 const HomeSection = () => {
   return (
     <>
@@ -55,10 +56,8 @@ const HomeSection = () => {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            alignItems: {xs:'center', sm:'flex-start'},
+            alignItems: { xs: "center", sm: "flex-start" },
             flexDirection: "column",
-            
-
             gap: 3,
             mt: 1,
           }}
@@ -66,18 +65,18 @@ const HomeSection = () => {
           <Typography
             variant="h2"
             color="primary"
-            sx={{ fontWeight:'300', display: "flex", flexDirection: "column", alignItems: {xs:'center', sm:'flex-start'}}}
+            sx={{
+              fontWeight: "300",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "center", sm: "flex-start" },
+            }}
           >
             <span>Alessandro</span>
             <span>Arroyo</span>
             <span>Lebron</span>
           </Typography>
           <Typography variant="body1">FullStack Web Developer</Typography>
-          {/* <Box>
-            <EmailIcon />
-            <LinkedInIcon></LinkedInIcon>
-            <GitHubIcon />
-          </Box> */}
         </Container>
         <Container
           maxWidth="large"
@@ -91,11 +90,11 @@ const HomeSection = () => {
           }}
         >
           <Typography
-          color="primary"
+            color="primary"
             sx={{
-              fontSize:"3em",
+              fontSize: "3em",
               textAlign: {
-                xs:'center',
+                xs: "center",
                 sm: "right",
               },
             }}
@@ -106,16 +105,16 @@ const HomeSection = () => {
           <Typography
             sx={{
               textAlign: {
-                xs:'center',
+                xs: "center",
                 sm: "right",
-              },mb:2
+              },
+              mb: 2,
             }}
             variant="body2"
           >
-            Hello! I'm a 27 year old developer from Barcelona.
-              I love coding! Being able to convert my thoughts into a reality is
-              something that makes me really happy. So I hope I can continue coding forever more!
-           
+            Hello! I'm a 27 year old developer from Barcelona. I love coding!
+            Being able to convert my thoughts into a reality is something that
+            makes me really happy. So I hope I can continue coding forever more!
           </Typography>
         </Container>
       </Responsive>
@@ -132,8 +131,8 @@ const HomeSection = () => {
           },
         }}
       >
-        <HomeButton text="Contact Me"/>
-        <HomeButton text="Learn More"/>
+        <HomeButton targetId="contact-section" text="Contact Me" />
+        <HomeButton text="Learn More" />
       </Container>
       <Container
         maxWidth="large"

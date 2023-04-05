@@ -13,7 +13,7 @@ const ContactSection = () => {
   };
   return (
     <>
-      <Container>
+      <Container id="contact-section">
         <Typography
           variant="h3"
           sx={{ fontWeight: 300, mb: 3, mt: 5 }}

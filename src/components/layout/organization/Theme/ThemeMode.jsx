@@ -15,7 +15,7 @@ function ThemeMode() {
     alt="Light or dark mode button"
       sx={{
         cursor:'pointer',
-        mt: {xs: 9, sm:13},
+        mt: 2,
         display: "flex",
         width: "100%",
         alignItems: "center",

@@ -1,16 +1,11 @@
 import React from "react";
-import { Typography, Container, Box, Button, IconButton } from "@mui/material";
+import { Typography, Container, Box, IconButton } from "@mui/material";
 import EmailForm from "./Email/EmailForm";
 import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ContactSection = () => {
-  const btnStyle = {
-    textTransform: "lowercase",
-    backgroundColor: "#111111",
-    color: "white",
-  };
   return (
     <>
       <Container id="contact-section">

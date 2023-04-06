@@ -28,6 +28,7 @@ function HomeButton(props) {
       color="primary"
       onClick={handleClick}
       sx={{
+        color:"white",
         p: 1,
         fontSize: 14,
         width: {

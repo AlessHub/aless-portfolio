@@ -1,7 +1,6 @@
 import { Toolbar, Stack, Button, AppBar, Box } from "@mui/material";
 import Logo from "../../../assets/logo.png";
 import React from "react";
-import ThemeMode from "../organization/Theme/ThemeMode";
 import { useTheme } from "@mui/material";
 import { handleNavClick } from "../../../utils/Functions";
 
@@ -63,7 +62,6 @@ const Navbar = () => {
           </Stack>
         </Toolbar>
       </AppBar>
-      <ThemeMode />
     </>
   );
 };

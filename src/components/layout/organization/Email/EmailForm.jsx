@@ -75,7 +75,7 @@ const EmailForm = () => {
             variant="outlined"
             label="Email"
           />
-          <Button variant="contained" type="submit">
+          <Button sx={{color:'white'}} variant="contained" type="submit">
             Submit
           </Button>
         </FormControl>

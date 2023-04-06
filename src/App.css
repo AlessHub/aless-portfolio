@@ -43,3 +43,7 @@ a:active {
   justify-content: center;
   align-items: center;
 }
+
+.MuiDialog-paperWidthSm{
+  margin: 0px !important;
+}

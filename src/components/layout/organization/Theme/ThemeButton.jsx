@@ -43,20 +43,10 @@ function ThemeButton() {
       >
         <BrushIcon color="primary" />
       </IconButton>
-      <Dialog sx={{margin:0}} open={open} onClose={handlePopUpClose}>
+      <Dialog open={open} onClose={handlePopUpClose}>
         <ThemeMode />
         <DialogContent>
           <CirclePicker
-          styles={{
-            default: {
-              picker: {
-                padding: '0px'
-              },
-            },
-            card: {
-              boxShadow: "none",
-            },
-          }}
             triangle="hide"
             color={color}
             onChange={(newColor) => setColor(newColor.hex)}

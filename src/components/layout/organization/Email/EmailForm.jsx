@@ -1,7 +1,14 @@
-import React from "react";
 import { useState } from "react";
+import {
+  Button,
+  FormControl,
+  TextField,
+  Dialog,
+  DialogContent,
+  DialogActions,
+  Snackbar,
+} from "@mui/material";
 import { send } from "emailjs-com";
-import { FormControl, TextField, Button } from "@mui/material";
 
 const EmailForm = () => {
   const [toSend, setToSend] = useState({
@@ -10,21 +17,35 @@ const EmailForm = () => {
     message: "",
     reply_to: "",
   });
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
+    setShowConfirmation(true);
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
+
+  const handleConfirmationSubmit = () => {
     send("service_xfjktxl", "template_3wo5sqo", toSend, "W9dok0V1UzNRVpI-q")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
+        setShowSuccessMessage(true);
+        setShowConfirmation(false); // Close the confirmation dialog after the email is sent successfully
       })
       .catch((err) => {
         console.log("FAILED...", err);
       });
   };
 
-  const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
-  };
+  const isValid =
+    toSend.from_name.trim().length > 0 &&
+    toSend.message.trim().length > 0 &&
+    toSend.reply_to.trim().length > 0;
+
   return (
     <>
       <form onSubmit={onSubmit}>
@@ -46,6 +67,7 @@ const EmailForm = () => {
             color="primary"
             variant="outlined"
             label="Name"
+            required
           />
           <TextField
             type="text"
@@ -61,7 +83,7 @@ const EmailForm = () => {
             placeholder="Your message"
             value={toSend.message}
             onChange={handleChange}
-            
+            required
             variant="outlined"
             label="Message"
           />
@@ -71,15 +93,41 @@ const EmailForm = () => {
             placeholder="Your email"
             value={toSend.reply_to}
             onChange={handleChange}
-            
+            required
             variant="outlined"
             label="Email"
           />
-          <Button sx={{color:'white'}} variant="contained" type="submit">
+          <Button
+            sx={{ color: "white" }}
+            variant="contained"
+            type="submit"
+            disabled={!isValid}
+          >
             Submit
           </Button>
         </FormControl>
       </form>
+      <Dialog
+        open={showConfirmation}
+        onClose={() => setShowConfirmation(false)}
+      >
+        <DialogContent>
+          <p>Please confirm that you want to send the email</p>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setShowConfirmation(false)}>Cancel</Button>
+          <Button onClick={handleConfirmationSubmit} color="primary">
+            Send
+          </Button>
+        </DialogActions>
+      </Dialog>
+      <Snackbar
+        open={showSuccessMessage}
+        autoHideDuration={6000}
+        message="Email sent successfully"
+        onClose={() => setShowSuccessMessage(false)}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      />
     </>
   );
 };

@@ -36,13 +36,13 @@ const ContactSection = () => {
             <IconButton href="https://www.linkedin.com/in/alessandro-arroyo/" target="_blank" variant="contained">
               <LinkedInIcon color='primary' />
             </IconButton>
-            <Typography variant="body2">linkedin.com/in/alessandro-arroyo</Typography>
+            <Typography variant="body2">Alessandro Arroyo</Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <IconButton href="https://github.com/AlessHub" target="_blank" variant="contained">
               <GitHubIcon color='primary'/>
             </IconButton>
-          <Typography variant="body2">github.com/AlessHub</Typography>
+          <Typography variant="body2">AlessHub</Typography>
           </Box>
         </Box>
       </Container>

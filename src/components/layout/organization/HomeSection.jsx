@@ -29,6 +29,7 @@ function HomeButton(props) {
       onClick={handleClick}
       sx={{
         color:"white",
+        boxShadow:'none',
         p: 1,
         fontSize: 14,
         width: {
@@ -123,7 +124,8 @@ const HomeSection = () => {
         maxWidth="large"
         sx={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: {xs:"center",
+                            sm:'flex-start'},
           p: {
             xs: 0,
             sm: 0,
@@ -133,7 +135,7 @@ const HomeSection = () => {
         }}
       >
         <HomeButton targetId="contact-section" text="Contact Me" />
-        <HomeButton text="Learn More" />
+        {/* <HomeButton text="Learn More" /> */}
       </Container>
       <Container
         maxWidth="large"

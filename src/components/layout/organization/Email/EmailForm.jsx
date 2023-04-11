@@ -7,10 +7,26 @@ import {
   DialogContent,
   DialogActions,
   Snackbar,
+  Typography,
 } from "@mui/material";
 import { send } from "emailjs-com";
+import { useTheme } from "@emotion/react";
+import { hexToRgb } from "../../../../utils/Functions";
 
 const EmailForm = () => {
+  const theme = useTheme();
+
+  const autoFillStyle = {
+    "& input:WebkitAutofill": {
+      "WebkitBoxShadow?": `0 0 0 100px rgba(${hexToRgb(
+        theme.palette.primary.main
+      )}, 0.4) inset`,
+      "WebkitTextFillColor": "#ffffff0",
+      caretColor: "#ffffff0",
+      borderRadius: "inherit",
+    },
+  };
+
   const [toSend, setToSend] = useState({
     from_name: "",
     to_name: "Alessandro",
@@ -19,6 +35,7 @@ const EmailForm = () => {
   });
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [emailError, setEmailError] = useState("");
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -27,24 +44,33 @@ const EmailForm = () => {
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
-  };
 
+    if (e.target.name === "reply_to") {
+      if (!emailRegex.test(e.target.value)) {
+        setEmailError("Please enter a valid email address.");
+      } else {
+        setEmailError("");
+      }
+    }
+  };
   const handleConfirmationSubmit = () => {
     send("service_xfjktxl", "template_3wo5sqo", toSend, "W9dok0V1UzNRVpI-q")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setShowSuccessMessage(true);
-        setShowConfirmation(false); // Close the confirmation dialog after the email is sent successfully
+        setShowConfirmation(false);
       })
       .catch((err) => {
         console.log("FAILED...", err);
       });
   };
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   const isValid =
     toSend.from_name.trim().length > 0 &&
     toSend.message.trim().length > 0 &&
-    toSend.reply_to.trim().length > 0;
+    emailRegex.test(toSend.reply_to);
 
   return (
     <>
@@ -68,6 +94,7 @@ const EmailForm = () => {
             variant="outlined"
             label="Name"
             required
+            sx={autoFillStyle}
           />
           <TextField
             type="text"
@@ -76,6 +103,7 @@ const EmailForm = () => {
             placeholder="to name"
             value={toSend.to_name}
             onChange={handleChange}
+            style={autoFillStyle}
           />
           <TextField
             type="text"
@@ -86,6 +114,7 @@ const EmailForm = () => {
             required
             variant="outlined"
             label="Message"
+            sx={autoFillStyle}
           />
           <TextField
             type="text"
@@ -96,6 +125,9 @@ const EmailForm = () => {
             required
             variant="outlined"
             label="Email"
+            error={emailError !== ""}
+            helperText={emailError}
+            sx={autoFillStyle}
           />
           <Button
             sx={{ color: "white" }}
@@ -112,7 +144,9 @@ const EmailForm = () => {
         onClose={() => setShowConfirmation(false)}
       >
         <DialogContent>
-          <p>Please confirm that you want to send the email</p>
+          <Typography>
+            Please confirm that you want to send the email
+          </Typography>
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setShowConfirmation(false)}>Cancel</Button>

@@ -27,19 +27,19 @@ const ContactSection = () => {
           sx={{ p:1, display: "flex", flexDirection:'column', width:{xs:'100%', sm:'50%'}, margin:'auto', mb:2}}
         >
           <Box sx={{ display: "flex", alignItems: "center"}}>
-            <IconButton href="mailto:aless312@gmail.com" target="_blank" variant="contained">
+            <IconButton aria-label="email" href="mailto:aless312@gmail.com" target="_blank" variant="contained">
               <MailIcon color='primary' />
             </IconButton>
             <Typography variant="body2">aless312@gmail.com</Typography>
           </Box>
           <Box href="https://www.linkedin.com/in/alessandro-arroyo/" sx={{ display: "flex", alignItems: "center" }}>
-            <IconButton href="https://www.linkedin.com/in/alessandro-arroyo/" target="_blank" variant="contained">
-              <LinkedInIcon color='primary' />
+            <IconButton aria-label="Linkedin" href="https://www.linkedin.com/in/alessandro-arroyo/" target="_blank" variant="contained">
+              <LinkedInIcon alt="Linkedin" color='primary' />
             </IconButton>
             <Typography variant="body2">Alessandro Arroyo</Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <IconButton href="https://github.com/AlessHub" target="_blank" variant="contained">
+            <IconButton aria-label="Github" href="https://github.com/AlessHub" target="_blank" variant="contained">
               <GitHubIcon color='primary'/>
             </IconButton>
           <Typography variant="body2">AlessHub</Typography>

@@ -9,10 +9,10 @@ import {
 } from "@mui/material";
 import ThemeMode from "./ThemeMode";
 import BrushIcon from "@mui/icons-material/Brush";
-import { CirclePicker } from "react-color";
+import { CirclePicker, ChromePicker } from "react-color";
 import { ModeContext } from "../../../../App";
 
-function ThemeButton() {
+function ThemeColor() {
   const { mode, colorObj } = useContext(ModeContext);
   const { color, setColor } = colorObj;
 
@@ -37,6 +37,7 @@ function ThemeButton() {
       }}
     >
       <IconButton
+      aria-label="Theme"
         variant="contained"
         sx={{ textTransform: "capitalize" }}
         onClick={handlePopUpOpen}
@@ -62,4 +63,4 @@ function ThemeButton() {
   );
 }
 
-export default ThemeButton;
+export default ThemeColor;

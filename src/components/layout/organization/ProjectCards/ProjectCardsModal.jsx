@@ -68,6 +68,7 @@ const ProjectModal = ({ project, open, handleClose }) => {
               variant="contained"
               sx={{
                 mt: 3,
+                color:'white',
                 backgroundColor: "#111111",
                 textTransform: "capitalize",
               }}

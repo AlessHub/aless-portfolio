@@ -5,13 +5,13 @@ import ContactSection from "../components/layout/organization/ContactSection";
 import HomeSection from "../components/layout/organization/HomeSection";
 import PortfolioSection from "../components/layout/organization/ProjectsSection";
 import SkillsSection from "../components/layout/organization/SkillsSection";
-import ThemeButton from "../components/layout/organization/Theme/ThemeButton";
+import ThemeColor from "../components/layout/organization/Theme/ThemeColor";
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <ThemeButton/>
+      <ThemeColor/>
       <ScrollToTop/>
       <HomeSection />
       <SkillsSection />

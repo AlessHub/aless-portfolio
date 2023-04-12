@@ -9,8 +9,8 @@
         "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png",
         "imageSlider": [
             "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png",
-            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png",
-            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png"
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/league2.png",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/league1.png"
         ],
         "repository": "https://github.com/AlessHub/leagueApi",
         "techStack": [
@@ -29,8 +29,8 @@
         "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp.png",
         "imageSlider": [
             "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp.png",
-            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp.png",
-            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp.png"
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp2.png",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp3.png"
         ],
         "repository": "https://github.com/AlessHub/rankingapp",
         "techStack": [

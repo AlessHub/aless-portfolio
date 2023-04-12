@@ -17,8 +17,8 @@ const EmailForm = () => {
   const theme = useTheme();
 
   const autoFillStyle = {
-    "& input:WebkitAutofill": {
-      "WebkitBoxShadow?": `0 0 0 100px rgba(${hexToRgb(
+    "& input:-webkit-autofill": {
+      "WebkitBoxShadow": `0 0 0 100px rgba(${hexToRgb(
         theme.palette.primary.main
       )}, 0.4) inset`,
       "WebkitTextFillColor": "#ffffff0",

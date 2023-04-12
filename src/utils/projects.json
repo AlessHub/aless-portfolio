@@ -10,7 +10,7 @@
         "imageSlider": [
             "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png",
             "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/league2.png",
-            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/league1.png"
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/league5.png"
         ],
         "repository": "https://github.com/AlessHub/leagueApi",
         "techStack": [
@@ -48,9 +48,9 @@
         "detailedDescription": "In our first encounter as a group with BackEnd, we had to create an app to manage and create different events. This was done in the span of 2 weeks, we used Laravel with MySql and Blade for the display of the website",
         "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png",
         "imageSlider": [
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/laraEvents3.png",
             "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png",
-            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png",
-            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png"
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/laraEvents4.png"
         ],
         "repository": "https://github.com/AlessHub/LaraEventsApp",
         "techStack": [
@@ -69,9 +69,9 @@
         "detailedDescription":"Final project of our Bootcamp. The idea was to create an App that would help users change their consuming habits. We had 3 weeks to finish this project, like in the other projects, we used Kanban, Agile&Scrum.",
         "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png",
         "imageSlider": [
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy2.png",
             "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png",
-            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png",
-            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png"
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy3.png"
         ],
         "repository": "https://github.com/AlessHub/energy",
         "techStack": ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png",

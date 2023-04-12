@@ -39,7 +39,7 @@ const ProjectModal = ({ project, open, handleClose }) => {
     >
       <Fade in={open}>
         <Card sx={style}>
-          <CardMedia sx={{width:'100%'}}>
+          <CardMedia>
             <ProjectCardSwiper imageUrls={project.imageSlider} />
           </CardMedia>
           <CardContent>

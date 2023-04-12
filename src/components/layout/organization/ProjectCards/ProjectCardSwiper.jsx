@@ -31,8 +31,8 @@ const ProjectCardSwiper = ({ imageUrls }) => {
               component="img"
               alt="Card"
               image={imageUrl}
-              sx={{  width: "100%",
-                height: "auto", maxHeight: "300px"}}
+              sx={{ filter:'brightness(0.8)', height: {xs:"200px",
+              sm:"300px"}}}
             />
           </SwiperSlide>
         ))}

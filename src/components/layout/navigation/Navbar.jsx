@@ -1,43 +1,67 @@
-import {
-  Toolbar,
-  Stack,
-  Button,
-  Container
-} from "@mui/material";
+import { Toolbar, Stack, Button, AppBar, Box } from "@mui/material";
 import Logo from "../../../assets/logo.png";
 import React from "react";
-import { Link } from "react-router-dom";
+import { useTheme } from "@mui/material";
+import { handleNavClick } from "../../../utils/Functions";
 
 const Navbar = () => {
+  const theme = useTheme();
+
   return (
     <>
-     <Container sx={{backgroundColor:'#000000'}} maxWidth="xl">
-      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-          <Link
-            to="/"
+      <AppBar sx={{ backgroundColor: "#111111" }}>
+        <Toolbar
+          sx={{
+            p: 1,
+            display: "flex",
+            justifyContent: {
+              xs: "center",
+              sm: "space-between",
+            },
+          }}
+        >
+          <Box
+            component="img"
             sx={{
-              flexGrow: 2,
-              fontFamily: 'Economica',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              width: "100%",
+              maxWidth: "60px",
+              height: "auto",
+              display: {
+                xs: "none",
+                sm: "block",
+              },
             }}
-          >
-            <img className="logo" src={Logo} alt="logo"/>
-          </Link>
-        <Stack direction="row">
-          <Link to="/create">
-            <Button color='inherit'>Create</Button>
-          </Link>
-          <Link to="/skills">
-            <Button color='inherit'>Skills</Button>
-          </Link>
-          <Button color='inherit'>Projects</Button>
-          <Button color='inherit'>Contact</Button>
-        </Stack>
-      </Toolbar>
-      </Container>
+            alt="Logo"
+            src={Logo}
+          />
+          <Stack direction="row">
+            <Button
+              color={
+                theme.palette.mode === "dark" ? "inherit" : "primary"
+              }
+              onClick={(e) => handleNavClick("skills-section", e)}
+            >
+              Skills
+            </Button>
+            <Button
+              color={
+                theme.palette.mode === "dark" ? "inherit" : "primary"
+              }
+              onClick={(e) => handleNavClick("projects-section", e)}
+            >
+              Projects
+            </Button>
+            <Button
+              color={
+                theme.palette.mode === "dark" ? "inherit" : "primary"
+              }
+              onClick={(e) => handleNavClick("contact-section", e)}
+            >
+              Contact
+            </Button>
+          </Stack>
+        </Toolbar>
+      </AppBar>
     </>
   );
 };

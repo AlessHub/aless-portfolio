@@ -5,9 +5,9 @@ import Slider from '../navigation/Slider/Slider';
 const SkillsSection = () => {
   return (
     <>
-    <Typography variant="h3"
-            sx={{ mb:5, textAlign:'center', mt:5}}>
-        What can I do?
+    <Typography id="skills-section" variant="h3"
+            sx={{ fontWeight:300, mb:3, textAlign:'center', mt:5}}>
+        Tech Stack
     </Typography>
     <Slider/>
     </>

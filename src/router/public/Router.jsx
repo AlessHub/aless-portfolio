@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import Home from '../../views/Home';
-import Create from '../../views/Create';
+import Admin from '../../views/Admin';
 import Edit from '../../components/layout/EditProject';
 
 export default class PublicRoute extends React.Component {
@@ -16,7 +16,7 @@ export default class PublicRoute extends React.Component {
         <Router>
             <Routes>
                 <Route exact path="/" element={<Home/>}/>
-                <Route path='/create' element={<Create/>} />
+                <Route path='/admin' element={<Admin/>} />
                 <Route path='edit/:id' element={<Edit/>} />
             </Routes>
         </Router>

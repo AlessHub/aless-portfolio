@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "photos": "url",
+        "deploy": "https://leagueofapis.netlify.app",
+        "title": "LeagueOfApis",
+        "description": "A quick exercise to learn and play around LoL API. The main goal was to learn how to call API's and display their data.",
+        "detailedDescription": "We were given a handful of API's to practise with, wether it was using fetch or axios, the idea was to call them and play around on how to display them on a website, this was done in the span of a day.",
+        "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png",
+        "imageSlider": [
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/leagueofApis.png",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/league2.png",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/league5.png"
+        ],
+        "repository": "https://github.com/AlessHub/leagueApi",
+        "techStack": [
+            "https://cdn.worldvectorlogo.com/logos/html-1.svg",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/icons/css.png",
+            "https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
+        ]
+    },
+    {
+        "id": 2,
+        "photos": "url",
+        "deploy": "https://rankingapp.vercel.app",
+        "title": "RankingApp",
+        "description": "We were tasked with an app that would rank different apps depending on user ratings.",
+        "detailedDescription": "We were given the task to make an App that would rank different apps depending on user ratings, this was done in the span of 2 weeks. We used localStorage to manage the data and use the CRUD system. And filters to search and filter around the different Apps.",
+        "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp.png",
+        "imageSlider": [
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp5.png",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp2.png",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/arcoApp3.png"
+        ],
+        "repository": "https://github.com/AlessHub/rankingapp",
+        "techStack": [
+            "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+            "https://miro.medium.com/v2/resize:fit:318/1*7jRD5QhgARucFKvRHFxpOg.png"
+        ]
+    },
+    {
+        "id": 3,
+        "photos": "url",
+        "deploy": "null",
+        "title": "LaraEventsApp",
+        "description": "In our first encounter as a group with BackEnd, we had to create an app to manage and create different events.",
+        "detailedDescription": "In our first encounter as a group with BackEnd, we had to create an app to manage and create different events. This was done in the span of 2 weeks, we used Laravel with MySql and Blade for the display of the website",
+        "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png",
+        "imageSlider": [
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/laraEvents3.png",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/eventsAverno.png",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/laraEvents4.png"
+        ],
+        "repository": "https://github.com/AlessHub/LaraEventsApp",
+        "techStack": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png",
+            "https://www.svgrepo.com/show/303251/mysql-logo.svg",
+            "https://camo.githubusercontent.com/c38bf4a44750bd9b576a2259a5074dd277d63f0a412b5b1f31f54e516711ef5b/687474703a2f2f736173732d6c616e672e636f6d2f6173736574732f696d672f7374796c6567756964652f7365616c2d636f6c6f722d61656630333534632e706e67",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png"
+        ]
+    },
+    {
+        "id": 4,
+        "photos": "url",
+        "deploy": "null",
+        "title": "EcoEnergy",
+        "description": "Final project of our Bootcamp. The idea was to create an App that would help users change their consuming habits.",
+        "detailedDescription":"Final project of our Bootcamp. The idea was to create an App that would help users change their consuming habits. We had 3 weeks to finish this project, like in the other projects, we used Kanban, Agile&Scrum.",
+        "imageCover": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png",
+        "imageSlider": [
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy2.png",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy.png",
+            "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/ecoEnergy3.png"
+        ],
+        "repository": "https://github.com/AlessHub/energy",
+        "techStack": ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png",
+        "https://www.svgrepo.com/show/303251/mysql-logo.svg", "https://www.svgrepo.com/download/373974/phpunit.svg", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", "https://cdn.iconscout.com/icon/free/png-256/jest-3629451-3031514.png", "https://mui.com/static/logo.png"]
+    }
+]

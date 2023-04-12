@@ -1,18 +1,24 @@
-import { Paper, Container } from '@mui/material';
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import { useTheme } from '@emotion/react';
 
 
-function Item({item})
-{
-    return (
-        <Paper sx={{backgroundColor:"white", display:'flex', flexDirection:"column", alignItems:'center', height:'240px'}}>
-            <Container sx={{display:'flex', alignItems:'center', flexDirection:'column', mt:3}}>
-                
-            <img className="sliderIcon" src={item.icon} alt="icon"/>
-            <h2 style={{color:'black'}}>{item.title}</h2>
-            <p style={{color:'black'}}> {item.description}</p>
-            </Container>
-        </Paper>
-    )
+export default function Item({item}) {
+  const theme = useTheme();
+  return (
+    <Card  sx={{ boxShadow:`2px 2px ${theme.palette.primary.main}`, border:`1px solid ${theme.palette.primary.main}`, width:80, height:80, display:'flex', flexDirection:'column', alignItems:'center'}}>
+      <CardMedia
+        component="img"
+        alt="Card"
+        image={item.icon}
+        sx={{width: "100%",
+            maxWidth: '50px',
+            minHeight: '25px',
+            height: 'auto',
+            margin: 'auto',
+          }}
+      />
+    </Card>
+  );
 }
-
-export default Item;

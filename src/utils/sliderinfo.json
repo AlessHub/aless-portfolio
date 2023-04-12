@@ -1,83 +1,72 @@
-
-
-[{
-    "id":1,
-    "title":"Html",
-    "icon":"https://cdn.worldvectorlogo.com/logos/html-1.svg",
-    "description":"Boooring"
-},{
-    "id":2,
-    "title":"Css",
-    "icon":"https://cdn.iconscout.com/icon/free/png-256/css3-9-1175237.png",
-    "description":"Let's see what happens when someone adds a very long description. Has it broken yet? What about now? Soooo what about now. Yea i broke it. Actually not sure let me keep typing, just for a bit longer"
-},{
-    "id":3,
-    "title":"JavaScript",
-    "icon":"https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
-    "description":"Makes me wanna die"
-},{
-    "id":4,
-    "title":"Bootstrap",
-    "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png",
-    "description":"Makes me wanna die but a little less"
-},{
-    "id":1,
-    "title":"Html",
-    "icon":"https://cdn.worldvectorlogo.com/logos/html-1.svg",
-    "description":"Boooring"
-},{
-    "id":2,
-    "title":"Css",
-    "icon":"https://cdn.iconscout.com/icon/free/png-256/css3-9-1175237.png",
-    "description":"Let's see what happens when someone adds a very long description."
-},{
-    "id":3,
-    "title":"JavaScript",
-    "icon":"https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
-    "description":"Makes me wanna die"
-},{
-    "id":4,
-    "title":"Bootstrap",
-    "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png",
-    "description":"Makes me wanna die but a little less"
-},{
-    "id":1,
-    "title":"Html",
-    "icon":"https://cdn.worldvectorlogo.com/logos/html-1.svg",
-    "description":"Boooring"
-},{
-    "id":2,
-    "title":"Css",
-    "icon":"https://cdn.iconscout.com/icon/free/png-256/css3-9-1175237.png",
-    "description":"Let's see what happens when someone adds a very long description."
-},{
-    "id":3,
-    "title":"JavaScript",
-    "icon":"https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
-    "description":"Makes me wanna die"
-},{
-    "id":4,
-    "title":"Bootstrap",
-    "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png",
-    "description":"Makes me wanna die but a little less"
-},{
-    "id":1,
-    "title":"Html",
-    "icon":"https://cdn.worldvectorlogo.com/logos/html-1.svg",
-    "description":"Boooring"
-},{
-    "id":2,
-    "title":"Css",
-    "icon":"https://cdn.iconscout.com/icon/free/png-256/css3-9-1175237.png",
-    "description":"Let's see what happens when someone adds a very long description."
-},{
-    "id":3,
-    "title":"JavaScript",
-    "icon":"https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
-    "description":"Makes me wanna die"
-},{
-    "id":4,
-    "title":"Bootstrap",
-    "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png",
-    "description":"Makes me wanna die but a little less"
-}]
+[
+    {
+        "id": 1,
+        "title": "Html",
+        "icon": "https://cdn.worldvectorlogo.com/logos/html-1.svg"
+    },
+    {
+        "id": 2,
+        "title": "Css",
+        "icon": "https://raw.githubusercontent.com/AlessHub/aless-portfolio/develop/src/assets/icons/css.png"
+    },
+    {
+        "id": 3,
+        "title": "JavaScript",
+        "icon": "https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
+    },
+    {
+        "id": 4,
+        "title": "Sass",
+        "icon": "https://camo.githubusercontent.com/c38bf4a44750bd9b576a2259a5074dd277d63f0a412b5b1f31f54e516711ef5b/687474703a2f2f736173732d6c616e672e636f6d2f6173736574732f696d672f7374796c6567756964652f7365616c2d636f6c6f722d61656630333534632e706e67"
+    },
+    {
+        "id": 5,
+        "title": "Bootstrap",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png"
+    },
+    {
+        "id": 6,
+        "title": "React",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+    },
+    {
+        "id": 7,
+        "title": "Jest",
+        "icon": "https://cdn.iconscout.com/icon/free/png-256/jest-3629451-3031514.png"
+    },
+    {
+        "id": 8,
+        "title": "Styled Components",
+        "icon": "https://miro.medium.com/v2/resize:fit:318/1*7jRD5QhgARucFKvRHFxpOg.png"
+    },
+    {
+        "id": 9,
+        "title": "Material UI",
+        "icon": "https://mui.com/static/logo.png"
+    },
+    {
+        "id": 10,
+        "title": "Php",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+    },
+    {
+        "id": 11,
+        "title": "PhpUnit",
+        "icon": "https://www.svgrepo.com/download/373974/phpunit.svg"
+    },
+    {
+        "id": 12,
+        "title": "Laravel",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png"
+    },
+    {
+        "id": 13,
+        "title": "MySql",
+        "icon": "https://www.svgrepo.com/show/303251/mysql-logo.svg"
+    },
+    {
+        "id": 14,
+        "title": "Postman",
+        "icon": "https://www.svgrepo.com/download/354202/postman-icon.svg"
+    }
+]

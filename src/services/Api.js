@@ -16,19 +16,19 @@ export const createProject = async (project) => {
         'Content-Type': 'multipart/form-data'
       });
       return response.data;
-    } catch (error) {
+    } catch (error) { 
       console.log("ERRRR:: ",error.response.data);
 
     }
   };
 
-  export const editProject = async (id, project) => {
-    try {
-      const response = await axios.patch(`${url}/${id}`, project);
-      console.log(response)
-      return response.data;
-    } catch (error) {
-      console.error(error);
-      return error.response.data;
-    }
-  };
+  // export const editProject = async (id, project) => {
+  //   try {
+  //     const response = await axios.patch(`${url}/${id}`, project);
+  //     console.log(response)
+  //     return response.data;
+  //   } catch (error) {
+  //     console.error(error);
+  //     return error.response.data;
+  //   }
+  // };

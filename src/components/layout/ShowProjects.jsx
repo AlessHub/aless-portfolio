@@ -20,7 +20,6 @@ const handleDelete = async (id) => {
 }
 return (
 <div>
-<Link to="/create" className='btn btn-success btn-lg '> Create </Link>
     <table>
         <thead>
             <tr>
@@ -40,7 +39,6 @@ return (
                             <Link to={`/edit/${project.id}`} className='btn btn-warning'>Edit</Link>
                             <button onClick={() => handleDelete(project.id)} className="btn btn-danger">Delete</button>
                         </td>
-
                     </tr>
                 ))
             }

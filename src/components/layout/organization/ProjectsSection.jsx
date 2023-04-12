@@ -2,8 +2,14 @@ import React from "react";
 import { Container } from "@mui/system";
 import { Typography, Link } from "@mui/material";
 import ProjectCards from "./ProjectCards/ProjectCards";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const PortfolioSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <Container id="projects-section" sx={{ mb: 5 }}>
@@ -30,7 +36,8 @@ const PortfolioSection = () => {
           </Link>
         </Typography>
       </Container>
-      <Container
+      <Container 
+      data-aos="fade-right"
         sx={{
           display: "flex",
           gap: 5,
@@ -39,7 +46,7 @@ const PortfolioSection = () => {
           alignItems: "center",
         }}
       >
-        <ProjectCards />
+        <ProjectCards/>
       </Container>
     </>
   );
